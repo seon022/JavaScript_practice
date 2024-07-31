@@ -23,7 +23,7 @@
 // console.log(set2);
 
 // // for ... of문과 forEach()메서드 사용하여 포함된 값을 순회할 수 있다.
-// set2.forEach((v, v2, set2) => console.log(v, v2, set2)); 
+// set2.forEach((v, v2, set2) => console.log(v, v2, set2));
 
 // let odds = new Set([1, 3, 5, 7, 9]);
 // let sum = 0;
@@ -51,12 +51,10 @@
 // let set1 = new Set([1, 2, 3]);
 // let set2 = new Set([4, 3, 2]);
 // let union = new Set([...set1, ...set2]);
-// let intersection = new Set([...set1].filter(x => set2.has(x))); 
+// let intersection = new Set([...set1].filter(x => set2.has(x)));
 // console.log(intersection);
 // let difference = new Set([...set1].filter(x => !set2.has(x)));
 // console.log(difference);
-
-
 
 // // Map
 // const map = new Map([['key1', 'value1'],['key2', 'value2']]);
