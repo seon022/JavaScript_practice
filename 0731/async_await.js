@@ -16,37 +16,37 @@
 // const greeter = new Greeter();
 // greeter.sayHello().then(console.log);
 
-// async function sayHello() {
-//   return Promise.resolve("안녕");
-// }
-// sayHello().then(console.log);
+async function sayHello() {
+  return Promise.resolve("안녕");
+}
+sayHello().then(console.log);
 
-// async function sayHello() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("안녕");
-//     });
-//   });
-// }
-// sayHello().then(console.log);
+async function sayHello() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("안녕");
+    });
+  });
+}
+sayHello().then(console.log);
 
-// async function sayHello() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve("안녕");
-//     }, 1000);
-//   });
-// }
-// async function display() {
-//   try {
-//     let result = await sayHello();
-//     console.log(result);
-//     // sayHello 완료될때까지 기다렸다가 결과 반환
-//   } catch (e) {
-//     console.log(e);
-//   }
-// }
-// display();
+async function sayHello() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("안녕");
+    }, 1000);
+  });
+}
+async function display() {
+  try {
+    let result = await sayHello();
+    console.log(result);
+    // sayHello 완료될때까지 기다렸다가 결과 반환
+  } catch (e) {
+    console.log(e);
+  }
+}
+display();
 
 // let success = true;
 // function getUser() {

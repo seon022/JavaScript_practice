@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./select_result.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <form>
+        <fieldset>
+          <ul>
+            <li>
+              <label for="userName">이름</label>
+              <input type="text" id="userName" name="userName" />
+            </li>
+            <li>
+              <label for="class">수업</label>
+              <select name="major" id="major">
+                <option>학과 선택</option>
+                <option value="1">컴퓨터공학과</option>
+                <option value="2">심리학과</option>
+                <option value="3">화학공학과</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <label
+            ><input type="radio" name="subject" value="back" />백엔드</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="subject"
+              value="front"
+            />프론트엔드</label
+          >
+          <label
+            ><input type="radio" name="subject" value="full" />풀스택</label
+          >
+        </fieldset>
+        <fieldset>
+          <label><input type="checkbox" name="morning" />아침</label>
+          <label><input type="checkbox" name="afternoon" />점심</label>
+          <label><input type="checkbox" name="evening" />저녁</label>
+        </fieldset>
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

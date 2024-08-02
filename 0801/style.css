@@ -1,0 +1,20 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  position: absolute;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+}
+form label {
+  width: 100px;
+  margin-right: 10px;
+}
+li > input {
+  width: 400px;
+  height: 40px;
+}

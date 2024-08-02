@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./main_order.js"></script>
+  </head>
+  <body>
+    <form action="" name="order">
+      <ul>
+        <li>
+          <label class="field" for="billingName">이름</label>
+          <input type="text" class="input-box" id="billingName" />
+        </li>
+        <li>
+          <label class="field" for="billingTel">연락처</label>
+          <input type="text" class="input-box" id="billingTel" />
+        </li>
+        <li>
+          <label class="field" for="billingAddr">주소</label>
+          <input type="text" class="input-box" id="billingAddr" />
+        </li>
+      </ul>
+    </form>
+    <br /><br />
+    <form name="ship">
+      <ul>
+        <li id="shippingInfo">
+          <input type="checkbox" id="bill_info" name="shippingInfo" />
+          <label for="bill_info" class="bill_info"
+            >주문정보와 배송정보가 같습니다.</label
+          >
+        </li>
+        <li>
+          <label class="field" for="shippingName">이름</label>
+          <input type="text" class="input-box" id="shippingName" />
+        </li>
+        <li>
+          <label class="field" for="shippingTel">연락처</label>
+          <input type="text" class="input-box" id="shippingTel" />
+        </li>
+        <li>
+          <label class="field" for="shippingAddr">주소</label>
+          <input type="text" class="input-box" id="shippingAddr" />
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>

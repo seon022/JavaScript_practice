@@ -1,0 +1,11 @@
+ul,
+li {
+  list-style: none;
+}
+li {
+  font-size: 20px;
+  line-height: 150%;
+}
+li.complete {
+  color: gray;
+}

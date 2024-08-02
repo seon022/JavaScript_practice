@@ -41,19 +41,170 @@
 // me.sayHi();
 // Person.sayHello();
 
-const Person = (function () {
-  function Person(name) {
-    this.name = name;
-  }
-  Person.prototype.sayHi = function () {
-    console.log("Hi" + this.name);
-  };
-  Person.sayHello = function () {
-    console.log("Hello!");
-  };
-  return Person;
-})();
-const me = new Person("Lee");
-console.log(me.name);
-me.sayHi();
-Person.sayHello();
+// ---------------------------------------------------------
+// const Person = (function () {
+//   function Person(name) {
+//     this.name = name;
+//   }
+//   Person.prototype.sayHi = function () {
+//     console.log("Hi" + this.name);
+//   };
+//   Person.sayHello = function () {
+//     console.log("Hello!");
+//   };
+//   return Person;
+// })();
+// const me = new Person("Lee");
+// console.log(me.name);
+// me.sayHi();
+// Person.sayHello();
+
+// ---------------------------------------------------------
+// class Square {
+//   constructor(width, height) {
+//     this.width = width;
+//     this.height = height;
+//   }
+//   area() {
+//     return this.width * this.height;
+//   }
+//   static area2(width, height) {
+//     return width * height;
+//   }
+// }
+// const square = new Square(10, 10);
+// console.log(square.area());
+// console.log(Square.area2(20, 20));
+
+// ---------------------------------------------------------
+// const Person = {
+//   firstName: "Minji",
+//   lastName: "Choi",
+
+//   get fullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+//   set fullName(name) {
+//     [this.firstName, this.lastName] = name.split("");
+//   },
+// };
+// console.log(Person.fullName);
+// console.log(`${this.firstName} ${this.lastName}`);
+// ??????????????? undefined
+
+// ---------------------------------------------------------
+// class Person {
+//   #name = "";
+//   constructor(name) {
+//     this.#name = name;
+//   }
+//   get name() {
+//     return this.#name.trim();
+//   }
+// }
+// const me = new Person("Lee");
+// console.log(me.name);
+
+// ---------------------------------------------------------
+// super()
+
+// class Vehicle {
+//   constructor(name, wheel) {
+//     this.name = name;
+//     this.wheel = wheel;
+//   }
+// }
+// const myVehicle = new Vehicle("자전거", 2);
+// console.log(myVehicle);
+
+// class Bicycle extends Vehicle {
+//   constructor(name, wheel) {
+//     super(name, wheel);
+//   }
+// }
+// const myBicycle = new Bicycle("따릉이", 2);
+// console.log(myBicycle);
+
+// class Car extends Vehicle {
+//   constructor(name, wheel, license) {
+//     super(name, wheel);
+//     this.license = license;
+//   }
+// }
+// const myCar = new Car("벤츠", 4, true);
+// console.log(myCar);
+
+// // ---------------------------------------------------------
+// // super클래스의 메소드 상속
+// class Base {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   sayHi() {
+//     return `Hi ${this.name}, 잘 지냈니?`;
+//   }
+// }
+
+// class Derived extends Base {
+//   sayHi() {
+//     return `${super.sayHi()}`;
+//   }
+// }
+
+// const derived = new Derived("Lee");
+// console.log(derived.sayHi());
+
+// ---------------------------------------------------------
+// 예제1
+// class Book {
+//   constructor(title, author, price) {
+//     this.title = title;
+//     this.author = author;
+//     this.price = price;
+//   }
+// }
+
+// Book.prototype.page = 0; // 기본값으로 null 설정
+// // 프로토타입을 이용하여 page 프로퍼티 추가
+
+// // 예시 사용
+// const myBook = new Book("JavaScript", "ksy", 10000);
+// myBook.page = 180; // 페이지 수 설정
+// console.log(myBook);
+
+//---------------------------------------------------------
+// // 예제3
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   sayHi() {
+//     return `안녕하세요. 제 이름은 ${this.name}이고,  나이는 ${this.age}살입니다.`;
+//   }
+// }
+// const onePerson = new Person("stst", 100);
+// console.log(onePerson.sayHi());
+
+// //---------------------------------------------------------
+// class Calculator {
+//   static plus(a, b) {
+//     console.log(`${a} + ${b} = ${a + b} `);
+//   }
+//   static minus(a, b) {
+//     console.log(`${a} - ${b} = ${a - b} `);
+//   }
+//   static multiply(a, b) {
+//     console.log(`${a} * ${b} = ${a * b} `);
+//   }
+//   static devide(a, b) {
+//     console.log(`${a} / ${b} = ${a / b} `);
+//   }
+// }
+// Calculator.plus(100, 4);
+
+function Calculator() {}
+Calculator.add = function (a, b) {
+  return a + b;
+};
+console.log(Calculator.add(2, 5));

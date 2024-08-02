@@ -66,14 +66,14 @@
 //   console.log(`합계 : ${total}`);
 // });
 
-// Promise.allSettled(promises).then((results) => {
-//   const fulfilledResults = results
-//     .filter((result) => result.status === "fulfiled")
-//     .map((result) => result.value);
-//   const total = fulfilledResults.reduce((sum, value) => sum + value, 0);
-//   console.log(`결과 : ${fulfilledResults}`);
-//   console.log(`합계 : ${total}`);
-// });
+Promise.allSettled(promises).then((results) => {
+  const fulfilledResults = results
+    .filter((result) => result.status === "fulfiled")
+    .map((result) => result.value);
+  const total = fulfilledResults.reduce((sum, value) => sum + value, 0);
+  console.log(`결과 : ${fulfilledResults}`);
+  console.log(`합계 : ${total}`);
+});
 
 // function getUser() {
 //   return new Promise((resolve, reject) => {
