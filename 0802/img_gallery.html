@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>드래그 가능한 이미지 갤러리</title>
+    <style>
+      .image-container {
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        cursor: grab;
+      }
+      .image-container img {
+        width: 300px;
+        height: auto;
+        margin-right: 10px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        src="https://i.pinimg.com/236x/99/7a/9b/997a9b2cd93277769ca9b3d109bceed7.jpg"
+        alt="Image 1"
+      />
+      <img
+        src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/132202538_837291453484171_3413569778606868696_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=PL59kJX1DLwQ7kNvgFPuPme&_nc_ht=scontent-ssn1-1.xx&oh=00_AYB090sAYUJQyfE48kK9VP4adn1fxM5gR7lV4d05NKR2qQ&oe=66D3D1D0"
+        alt="Image 2"
+      />
+      <img
+        src="https://i.pinimg.com/236x/99/7a/9b/997a9b2cd93277769ca9b3d109bceed7.jpg"
+        alt="Image 3"
+      />
+      <img
+        src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/132202538_837291453484171_3413569778606868696_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=PL59kJX1DLwQ7kNvgFPuPme&_nc_ht=scontent-ssn1-1.xx&oh=00_AYB090sAYUJQyfE48kK9VP4adn1fxM5gR7lV4d05NKR2qQ&oe=66D3D1D0"
+        alt="Image 4"
+      />
+    </div>
+
+    <script src="./img_gallery.js"></script>
+  </body>
+</html>
